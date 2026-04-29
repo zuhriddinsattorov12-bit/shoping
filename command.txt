@@ -1,0 +1,23 @@
+/* 
+rm - rf command.txt - faylni  o'chiradi
+    
+shell commands:
+
+mkdir - p directory_name - directory yaratadi
+cd directory_name - directory ga o'tadi
+cd .. - oldingi directory ga o'tadi
+cd ~ - home directory ga o'tadi
+cd / - root directory ga o'tadi
+cd - - hozirgi directory ga o'tadi
+cd -- - hozirgi directory ga o'tadi
+cd -- - hozirgi directory ga o'tadi
+
+
+      git commands: 
+git add . - faylarni git ga qo'shadi
+git commit -m "message" - faylarni git ga qo'shadi
+git push - faylarni git ga joylaydi
+
+
+
+*/ 
