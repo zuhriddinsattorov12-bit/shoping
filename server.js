@@ -4,7 +4,7 @@ const app = express();
 
 // Traditional API
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("<h1>Hello World!<h1>");
 });
 
 // Rest API
