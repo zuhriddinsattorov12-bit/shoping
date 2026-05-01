@@ -28,6 +28,24 @@ division(10, 3)
   .then((data) => {
     console.log("result:", data);
     console.log("....");
+
+    division(10, 4)
+      .then((data) => {
+        console.log("result:", data);
+        console.log("....");
+
+        division(20, 7)
+          .then((data) => {
+            console.log("result:", data);
+            console.log("....");
+          })
+          .catch((err) => {
+            console.log("error division:", err);
+          });
+      })
+      .catch((err) => {
+        console.log("error division:", err);
+      });
   })
   .catch((err) => {
     console.log("error division:", err);

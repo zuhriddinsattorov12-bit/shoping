@@ -14,10 +14,26 @@ function division(a, b, callback) {
 }
 
 // call
-const result = division(7, 4, function (err, data) {
+division(10, 3, function (err, data) {
   if (err) console.log("ERROR:", err);
   else {
     console.log("result:", data);
     console.log("=======");
+
+    division(10, 3, function (err, data) {
+      if (err) console.log("ERROR:", err);
+      else {
+        console.log("result:", data);
+        console.log("=======");
+
+        division(10, 3, function (err, data) {
+          if (err) console.log("ERROR:", err);
+          else {
+            console.log("result:", data);
+            console.log("=======");
+          }
+        });
+      }
+    });
   }
 });
