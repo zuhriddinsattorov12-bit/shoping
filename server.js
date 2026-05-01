@@ -1,1 +1,17 @@
 // NodeJs Express NestJs
+const express = require("express");
+const app = express();
+
+// Traditional API
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+// Rest API
+app.get("/rest", (req, res) => {
+  res.json({ name: "Marco", age: 21, group: "MIT" });
+});
+
+app.listen(3000, () => {
+  console.log("Backend Server is running on port 3000");
+});
